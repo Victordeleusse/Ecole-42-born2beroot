@@ -13,7 +13,7 @@ Installing the Born2beroot VM has several steps involved: the creation of the vi
 7. `10 to 13 GB` is enough for both mandatory and bonus parts.
 8. Start Born2beroot virtual machine.
 
-## Installing Debian
+## Installing Debian[more informations](https://www.debian.org/releases/stretch/s390x/ch06s03.html.fr#:~:text=Avec%20LVM%20avec%20chiffrement%2C%20l,traces%20d'une%20installation%20pr%C3%A9c%C3%A9dente.)
 
 1. Select Debian ISO image as startup disk.
 2. When Debian starts, choose `Install`.
@@ -23,3 +23,5 @@ Installing the Born2beroot VM has several steps involved: the creation of the vi
 6. Choose strong root password & confirm.
 7. Create user (`your_login` works for username & name).
 8. Choose password for new user.
+
+## Partitioning disk [more informations](https://www.debian.org/releases/stretch/s390x/apc.html.fr)
