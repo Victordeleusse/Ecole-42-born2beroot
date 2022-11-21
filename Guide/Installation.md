@@ -25,3 +25,10 @@ Installing the Born2beroot VM has several steps involved: the creation of the vi
 8. Choose password for new user.
 
 ## Partitioning disk [more informations](https://www.debian.org/releases/stretch/s390x/apc.html.fr)
+
+1. Choose `Manual partitionning`.
+2. Choose `sda Harddisk - SCSI (0,0,0) (sda) ...`
+3. `Yes create partition table`.
+4. We will crete 2 partitions, the first will be for an unencrypted /boot partition, the other for the encrypted logical volumes :
+  - `pri/log xxGB FREE SPACE` >> `Create a new partition` >> `500 MB` >> `Primary` >> `Beginning` >> `Mount point` >> `/boot` >> `Done`.
+  - `pri/log xxGB FREE SPACE` >> `Create a new partition` >> `max` >> `Logical` >> `Mount point` >> `Do not mount it` >> `Done`.
