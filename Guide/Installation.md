@@ -5,4 +5,4 @@ Installing the Born2beroot VM has several steps involved: the creation of the vi
 ## Creating a Virtual Machine in Virtualbox
 
 1. Launch VirtualBox & click New.
-2. Name born2beroot, sotre it in '''/sgoinfre/goinfre/Perso/your_login''' if at 42, or else on a large USB stick. Choose Linux & Debian.
+2. Name born2beroot, sotre it in `/sgoinfre/goinfre/Perso/your_login` if at 42, or else on a large USB stick. Choose Linux & Debian.
