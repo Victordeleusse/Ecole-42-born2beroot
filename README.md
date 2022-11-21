@@ -8,5 +8,5 @@ The 42 project Born2beroot explores the fundamentals of system administration by
 * Debian (iso) : https://www.debian.org/download (debian-11.5.0-amd64-netinst.iso)
 * Enough free disk space -> Install on sgoinfre if using school computer
 
-## Guide
+## [Guide](Guide)
 
