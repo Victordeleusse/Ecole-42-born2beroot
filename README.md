@@ -5,7 +5,7 @@ The 42 project Born2beroot explores the fundamentals of system administration by
 ## Pre-requisites
 
 * VirtualBox https://www.virtualbox.org/
-* Debian (iso) debian-11.5.0-amd64-netinst.iso
+* Debian (iso) : debian-11.5.0-amd64-netinst.iso
 * Enough free disk space -> Install on sgoinfre if using school computer
 
 ## Guides
