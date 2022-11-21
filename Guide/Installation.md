@@ -12,3 +12,14 @@ Installing the Born2beroot VM has several steps involved: the creation of the vi
 6. `Dynamically allocated`
 7. `10 to 13 GB` is enough for both mandatory and bonus parts.
 8. Start Born2beroot virtual machine.
+
+## Installing Debian
+
+1. Select Debian ISO image as startup disk.
+2. When Debian starts, choose `Install`.
+3. Choose language, geographical & keyboard layout settings.
+4. Hostname must be `your_login42`.
+5. Domain name leave empty.
+6. Choose strong root password & confirm.
+7. Create user (`your_login` works for username & name).
+8. Choose password for new user.
