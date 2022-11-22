@@ -69,3 +69,6 @@ Under "LV tmp", #1 3GB >> Use as >> Ext4 >> Mount point >> /tmp >> Done
 Under "LV var", #1 3GB >> Use as >> Ext4 >> Mount point >> /var >> Done
 Under "LV var-log", #1 4GB >> Use as >> Ext4 >> Mount point >> Enter manually >> /var/log >> Done
 Scroll down & Finish partitioning and write changes to disk. Yes.
+
+
+mdp : Cla pour vde et Par pour root
