@@ -72,3 +72,4 @@ Scroll down & Finish partitioning and write changes to disk. Yes.
 
 
 mdp : Cla pour vde et Par pour root
+victor_admin pour mariaDB
