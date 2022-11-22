@@ -10,7 +10,7 @@ Installing the Born2beroot VM has several steps involved: the creation of the vi
 4. Create a virtual hard disk now.
 5. `VDI`
 6. `Dynamically allocated`
-7. `10 to 13 GB` is enough for both mandatory and bonus parts.
+7. `12GB` is enough for both mandatory and bonus parts.
 8. Start Born2beroot virtual machine.
 
 ## Installing Debian [more informations](https://www.debian.org/releases/stretch/s390x/ch06s03.html.fr#:~:text=Avec%20LVM%20avec%20chiffrement%2C%20l,traces%20d'une%20installation%20pr%C3%A9c%C3%A9dente.)
@@ -47,17 +47,17 @@ Installing the Born2beroot VM has several steps involved: the creation of the vi
 1. Create a volume group:
 
 `Configure the Logical Volume Manager` >> `Yes`.  
-`Create Volume Group` >> `LVMGroup` >> `/dev/mapper/sda5_crypt`.
-Create Logical Volumes:
+`Create Volume Group` >> `LVMGroup` >> `/dev/mapper/sda5_crypt`.  
+`Create Logical Volumes`:  
 
-Create Logical Volume >> LVMGroup >> root >> 2.8G
-Create Logical Volume >> LVMGroup >> home >> 2G
-Create Logical Volume >> LVMGroup >> swap >> 1G
-Create Logical Volume >> LVMGroup >> tmp >> 2G
-Create Logical Volume >> LVMGroup >> srv >> 1.5G
-Create Logical Volume >> LVMGroup >> var >> 2G
-Create Logical Volume >> LVMGroup >> var-log >> max 
-When done, Display configuration details to double check & Finish.
+`Create Logical Volume` >> `LVMGroup` >> `root` >> `2.8G`  
+`Create Logical Volume` >> `LVMGroup` >> `home` >> `2G`  
+`Create Logical Volume` >> `LVMGroup` >> `swap` >> `1G`  
+`Create Logical Volume` >> `LVMGroup` >> `tmp` >> `2G`  
+`Create Logical Volume` >> `LVMGroup` >> `srv` >> `1G`  
+`Create Logical Volume` >> `LVMGroup` >> `var` >> `2G`  
+`Create Logical Volume` >> `LVMGroup` >> `var-log` >> `max`   
+When done, `Display configuration details` to check & `Finish`.  
 
 2. Set filesystems and mount points for each logical volume:
 
