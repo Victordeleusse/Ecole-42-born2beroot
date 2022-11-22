@@ -46,7 +46,8 @@ Installing the Born2beroot VM has several steps involved: the creation of the vi
 
 1. Create a volume group:
 
-`Configure the Logical Volume Manager` >> `Yes`.  `Create Volume Group` >> `LVMGroup` >> `/dev/mapper/sda5_crypt`.
+`Configure the Logical Volume Manager` >> `Yes`.  
+`Create Volume Group` >> `LVMGroup` >> `/dev/mapper/sda5_crypt`.
 Create Logical Volumes:
 
 Create Logical Volume >> LVMGroup >> root >> 2.8G
