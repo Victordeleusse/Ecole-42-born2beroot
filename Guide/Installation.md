@@ -77,3 +77,4 @@ victor_admin pour mariaDB
 
 
 ftp -p 5.196.27.224 -> victor/Clari6!
+ssh -p 4242 victor@5.196.27.224 -> same
