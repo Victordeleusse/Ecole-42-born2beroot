@@ -42,3 +42,30 @@ Installing the Born2beroot VM has several steps involved: the creation of the vi
 ... wait for formatting to finish...
 5. Choose a strong password for disk encryption. DO NOT forget it!
 
+### Logical Volume Manager (LVM)
+
+1. Create a volume group:
+
+`Configure the Logical Volume Manager` >> `Yes`.
+Create Volume Group >> LVMGroup >> /dev/mapper/sda5_crypt.
+Create Logical Volumes:
+
+Create Logical Volume >> LVMGroup >> root >> 2.8G
+Create Logical Volume >> LVMGroup >> home >> 2G
+Create Logical Volume >> LVMGroup >> swap >> 1G
+Create Logical Volume >> LVMGroup >> tmp >> 2G
+Create Logical Volume >> LVMGroup >> srv >> 1.5G
+Create Logical Volume >> LVMGroup >> var >> 2G
+Create Logical Volume >> LVMGroup >> var-log >> max 
+When done, Display configuration details to double check & Finish.
+
+2. Set filesystems and mount points for each logical volume:
+
+Under "LV home", #1 xxGB >> Use as >> Ext4 >> Mount point >> /home >> Done
+Under "LV root", #1 xxGB >> Use as >> Ext4 >> Mount point >> / >> Done
+Under "LV swap", #1 xxGB >> Use as >> swap area >> Done
+Under "LV srv", #1 3GB >> Use as >> Ext4 >> Mount point >> /srv >> Done
+Under "LV tmp", #1 3GB >> Use as >> Ext4 >> Mount point >> /tmp >> Done
+Under "LV var", #1 3GB >> Use as >> Ext4 >> Mount point >> /var >> Done
+Under "LV var-log", #1 4GB >> Use as >> Ext4 >> Mount point >> Enter manually >> /var/log >> Done
+Scroll down & Finish partitioning and write changes to disk. Yes.
