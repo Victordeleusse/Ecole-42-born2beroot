@@ -66,6 +66,14 @@ Be careful with the numbered, index are reinitialized after a deletion (check be
 ## DHCP Setup (To get the IP attribution in static)
 
 To get the "lo" interface which corresponds to the "loopback" interface (local loop), as well as the "ens192" interface corresponding to the network card connected to my local network:  
-`$ sudo ifconfig -a`
+`$ sudo ifconfig -a`  
+10.0.2.15
+To know the default gateway currently used by our machine:  
+`$ sudo ip route show`  
+10.0.2.2
+To get the DNS:  
+`$ sudo cat /etc/resolv.conf`  
+nameserver 10.0.2.3
+
 
 
