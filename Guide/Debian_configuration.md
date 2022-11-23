@@ -52,16 +52,14 @@ Check UFW status:
 $ sudo ufw status verbose
 ```
 Allow or deny ports:
-
+```
 $ sudo ufw allow <port>
 $ sudo ufw deny <port>
+```
 Remove port rule:
-
-$ sudo ufw delete allow <port>
-$ sudo ufw delete deny <port>
-Or, another method for rule deletion:
-
+```
 $ sudo ufw status numbered
 $ sudo ufw delete <port index number>
-Careful with the numbered method, the index numbers change after a deletion, check between deletes to get the correct port index number!
+```
+Be careful with the numbered, index are reinitialized after a deletion (check between deletes to get the correct port index number!)
 
