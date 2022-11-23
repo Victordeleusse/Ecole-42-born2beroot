@@ -21,7 +21,8 @@ Then `exit` root session and `exit` again to return to login prompt. Log in agai
 Let's check if this user has sudo privileges: `$ sudo whoami`
 
 It should answer `root`.   
-If not, modify sudoers file as explained below and add this line: `username  ALL=(ALL:ALL) ALL`
+If not, modify sudoers file as explained below and add this line:  
+`>username  ALL=(ALL:ALL) ALL`
 
 Edit sudoers.tmp file as root with the command:
 
