@@ -63,6 +63,44 @@ $ sudo ufw delete <port index number>
 ```
 Be careful with the numbered, index are reinitialized after a deletion (check between deletes to get the correct port index number!)
 
+## SSH Setup
+
+Install OpenSSH:  
+```
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install openssh-server
+```
+Check SSH status:  
+`$ sudo systemctl status ssh`
+Change SSH listening port to 4242:
+`$ sudo nano /etc/ssh/sshd_config`
+Find this line:
+
+#Port 22
+And uncomment (delete #) and change it to 4242:
+
+Port 4242
+Restart SSH service
+
+$ sudo systemctl restart ssh
+Don't forget to add a UFW rule to allow port 4242!
+
+Forward the host port 4242 to the guest port 4242: in VirtualBox,
+
+go to VM >> Settings >> Network >> Adapter 1 >> Advanced >> Port Forwarding.
+add a rule: Host port 4242 and guest port 4242.
+Restart SSH service after this change.
+
+In the host terminal, connect like this:
+
+$ ssh <username>@localhost -p 4242
+Or like this:
+
+$ ssh <username>@127.0.0.1 -p 4242
+To quit the ssh connection, just exit.
+
+
 ## DHCP Setup (To get the IP attribution in static)
 
 To get the "lo" interface which corresponds to the "loopback" interface (local loop), as well as the "ens192" interface corresponding to the network card connected to my local network:  
