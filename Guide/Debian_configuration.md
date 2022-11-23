@@ -85,6 +85,11 @@ iface enp0s3 inet -> static
  gateway 10.0.2.xx
  dns-nameservers 10.0.2.xx
 ```
+You are now unable to get any connexion from "outside", the DNS service is "unreachable".  
+Iniatialize DNS server from Google:  
+`$ sudo nano /etc/resol.conf`  
+add `nameserver 8.8.8.8 8.8.4.4`  
+
 
 
 
