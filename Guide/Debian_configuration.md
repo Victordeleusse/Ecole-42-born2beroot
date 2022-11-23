@@ -67,10 +67,12 @@ Be careful with the numbered, index are reinitialized after a deletion (check be
 
 To get the "lo" interface which corresponds to the "loopback" interface (local loop), as well as the "ens192" interface corresponding to the network card connected to my local network:  
 `$ sudo ifconfig -a`  
-> `10.0.2.xx`>
+> `10.0.2.xx`  
+
 To know the default gateway currently used by our machine:  
 `$ sudo ip route show`  
 > `10.0.2.xx`  
+
 To get the DNS:  
 `$ sudo cat /etc/resolv.conf`  
 > `nameserver 10.0.2.xx`
