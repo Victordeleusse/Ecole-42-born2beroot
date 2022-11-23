@@ -90,6 +90,8 @@ Iniatialize DNS server from Google:
 `$ sudo nano /etc/resol.conf`  
 add `nameserver 8.8.8.8 8.8.4.4`  
 
+Check your connexion by getting an answer from `ping google.fr`  
+
 
 
 
