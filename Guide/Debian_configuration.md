@@ -81,7 +81,7 @@ Then, to change the actual setup:
 `$ sudo nano /etc/network/interfaces`
 ```
 iface enp0s3 inet -> static
- adress 10.0.2.xx/24
+ adress 10.0.2.xx/24 (24 correspond to the netmask)
  gateway 10.0.2.xx
  dns-nameservers 10.0.2.xx
  dns-domain 42paris.fr
