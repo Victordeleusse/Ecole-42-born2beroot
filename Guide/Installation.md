@@ -61,14 +61,14 @@ When done, `Display configuration details` to check & `Finish`.
 
 2. Set filesystems and mount points for each logical volume:
 
-`Under "LV home", #1 xxGB` >> `Use as` >> `Ext4` >> `Mount point` >> `/home` >> `Done`
-`Under "LV root", #1 xxGB` >> `Use as` >> `Ext4` >> `Mount point` >> `/` >> `Done`
-`Under "LV swap", #1 xxGB` >> `Use as` >> `swap area` >> `Done`
-`Under "LV srv", #1 xxB` >> `Use as` >> `Ext4` >> `Mount point` >> `/srv` >> `Done`
-`Under "LV tmp", #1 xxGB` >> `Use as` >> `Ext4` >> `Mount point` >> `/tmp` >> `Done`
-`Under "LV var", #1 xxGB` >> `Use as` >> `Ext4` >> `Mount point` >> `/var` >> `Done`
-`Under "LV var-log", #1 xxGB` >> `Use as` >> `Ext4` >> `Mount point` >> `Enter manually` >> `/var/log` >> `Done`
-`Finish partitioning and write changes to disk`. `Yes`.
+`Under "LV home", #1 xxGB` >> `Use as` >> `Ext4` >> `Mount point` >> `/home` >> `Done`  
+`Under "LV root", #1 xxGB` >> `Use as` >> `Ext4` >> `Mount point` >> `/` >> `Done`  
+`Under "LV swap", #1 xxGB` >> `Use as` >> `swap area` >> `Done`  
+`Under "LV srv", #1 xxB` >> `Use as` >> `Ext4` >> `Mount point` >> `/srv` >> `Done`  
+`Under "LV tmp", #1 xxGB` >> `Use as` >> `Ext4` >> `Mount point` >> `/tmp` >> `Done`  
+`Under "LV var", #1 xxGB` >> `Use as` >> `Ext4` >> `Mount point` >> `/var` >> `Done`  
+`Under "LV var-log", #1 xxGB` >> `Use as` >> `Ext4` >> `Mount point` >> `Enter manually` >> `/var/log` >> `Done`  
+`Finish partitioning and write changes to disk`. `Yes`.  
 
 
 mdp : Cla pour vde et Par pour root
