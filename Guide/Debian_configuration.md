@@ -63,3 +63,9 @@ $ sudo ufw delete <port index number>
 ```
 Be careful with the numbered, index are reinitialized after a deletion (check between deletes to get the correct port index number!)
 
+## DHCP Setup (To get the IP attribution in static)
+
+To get the "lo" interface which corresponds to the "loopback" interface (local loop), as well as the "ens192" interface corresponding to the network card connected to my local network:  
+`$ sudo ifconfig -a`
+
+
