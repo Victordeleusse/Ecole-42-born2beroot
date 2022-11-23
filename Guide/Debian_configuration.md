@@ -38,3 +38,30 @@ Defaults     requiretty
 ```
 If `var/log/sudo` directory does not exist, `mkdir var/log/sudo`.
 
+## UFW Setup
+
+Install and enable UFW:
+```
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install ufw
+$ sudo ufw enable
+```
+Check UFW status:
+```
+$ sudo ufw status verbose
+```
+Allow or deny ports:
+
+$ sudo ufw allow <port>
+$ sudo ufw deny <port>
+Remove port rule:
+
+$ sudo ufw delete allow <port>
+$ sudo ufw delete deny <port>
+Or, another method for rule deletion:
+
+$ sudo ufw status numbered
+$ sudo ufw delete <port index number>
+Careful with the numbered method, the index numbers change after a deletion, check between deletes to get the correct port index number!
+
