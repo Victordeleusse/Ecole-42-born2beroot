@@ -9,9 +9,9 @@ Log in as root:
 
 Install sudo:
 
-`# apt update
-# apt upgrade
-# apt install sudo`  
+`apt update`    
+`apt upgrade`    
+`apt install sudo`    
 
 Add user to sudo group:
 
