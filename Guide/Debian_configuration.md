@@ -25,7 +25,7 @@ If not, modify sudoers file as explained below and add this line:
 > `username  ALL=(ALL:ALL) ALL`
 
 Edit `sudoers.tmp` file as root with the command:
-`# sudo visudo`
+`$ sudo visudo`
 
 Add these default settings as per subject instructions:
 ```
