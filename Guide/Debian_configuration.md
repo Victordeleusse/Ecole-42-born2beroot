@@ -17,12 +17,12 @@ Add user to sudo group:
 
 `# sudo usermod -aG sudo <username>`  
 
-Then exit root session and exit again to return to login prompt. Log in again as user. Let's check if this user has sudo privileges:
+Then `exit` root session and `exit` again to return to login prompt. Log in again as user. 
+Let's check if this user has sudo privileges: `$ sudo whoami`
 
-$ sudo whoami
-It should answer root. If not, modify sudoers file as explained below and add this line:
+It should answer `root`.   
+If not, modify sudoers file as explained below and add this line: `username  ALL=(ALL:ALL) ALL`
 
-username  ALL=(ALL:ALL) ALL
 Edit sudoers.tmp file as root with the command:
 
 # sudo visudo
