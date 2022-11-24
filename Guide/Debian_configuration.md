@@ -14,10 +14,10 @@ apt upgrade
 apt install sudo    
 ```
 Add user to sudo / user42 group:
-
-`# sudo usermod -aG sudo <username>`
-`# sudo usermod -g user42 <username>` (to get "user42 as your prime group)
-
+```
+# sudo usermod -aG sudo <username>
+# sudo usermod -g user42 <username>` (to get "user42 as your prime group)
+```
 Then `exit` root session and `exit` again to return to login prompt. Log in again as user. 
 Let's check if this user has sudo privileges: `$ sudo whoami`
 
