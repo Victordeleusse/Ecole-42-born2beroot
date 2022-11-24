@@ -151,3 +151,27 @@ Find the following line:
 `password [success=2 default=ignore] pam_unix.so obscure`  
 And add:
 `retry=3 minlen=10 lcredit=-1 ucredit=-1 dcredit=-1 maxrepeat=3 no_username enforce_for_root difok=7` placing difok after enforce_for_root to get root out of this setting
+
+## Hostname, Users and Groups
+The hostname must be your_intra_login42, but the hostname must be changed during the Born2beroot evaluation. The following commands might help:  
+```
+$ sudo hostnamectl set-hostname <new_hostname>
+$ hostnamectl status
+```
+There must be a user with your_intra_login as username. During evaluation, you will be asked to create, delete, modify user accounts. The following commands are useful to know:  
+`useradd` : creates a new user.  
+`usermod` : changes the user’s parameters: `-l` for the username, `-c` for the full name, `-g` for groups by group ID as mentioned before.  
+`userdel -r` : deletes a user and all associated files.    
+`id -u` : displays user ID.  
+`users` : shows a list of all currently logged in users.  
+`cat /etc/passwd | cut -d ":" -f 1` : displays a list of all users on the machine.  
+`cat /etc/passwd | awk -F '{print $1}'` : same as above.  
+The user named your_intra_login must be part of the sudo and user42 groups. You must also be able to manipulate user groups during evaluation with the following commands:
+
+groupadd : creates a new group.
+gpasswd -a : adds a user to a group.
+gpasswd -d : removes a user from a group.
+groupdel : deletes a group.
+groups : displays the groups of a user.
+id -g : shows a user’s main group ID.
+getent group : displays a list of all users in a group.
