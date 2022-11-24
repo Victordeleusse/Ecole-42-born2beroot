@@ -124,7 +124,7 @@ add `nameserver 8.8.8.8 8.8.4.4`
 
 Check your connexion by getting an answer from `ping google.fr`  
 
-### Password policy
+## Password policy
 
 Edit `/etc/login.defs` and find `"password aging controls"`. Modify them as per subject instructions:
 ```
