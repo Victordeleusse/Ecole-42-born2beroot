@@ -149,4 +149,4 @@ Change the parameters -> from the subject:
 Find the following line:
 `password [success=2 default=ignore] pam_unix.so obscure`  
 And add:
-`retry=3 minlen=10 lcredit=-1 ucredit=-1 dcredit=-1 maxrepeat=3 no_username enforce_for_root difok=7` placing difok after enforece_for_root to get root out of this setting
+`retry=3 minlen=10 lcredit=-1 ucredit=-1 dcredit=-1 maxrepeat=3 no_username enforce_for_root difok=7` placing difok after enforce_for_root to get root out of this setting
