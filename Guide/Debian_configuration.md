@@ -124,6 +124,29 @@ add `nameserver 8.8.8.8 8.8.4.4`
 
 Check your connexion by getting an answer from `ping google.fr`  
 
+### Password policy
 
+Edit `/etc/login.defs` and find `"password aging controls"`. Modify them as per subject instructions:
+```
+PASS_MAX_DAYS 30
+PASS_MIN_DAYS 2
+PASS_WARN_AGE 7
+```
+These changes aren't automatically applied to existing users, so use `chage` command to modify for any users and for root:
+```
+$ sudo chage -M 30 <username/root>
+$ sudo chage -m 2 <username/root>
+$ sudo chage -W 7 <username/root>
+```
+Use `chage -l <username/root>` to check user settings.
 
+Install password quality verification library:
+`$ sudo apt install libpam-pwquality`
 
+Change the parameters -> from the subject:  
+`$ sudo nano /etc/pam.d/common-password`
+
+Find the following line:
+`password [success=2 default=ignore] pam_unix.so obscure`  
+And add:
+`retry=3 minlen=10 lcredit=-1 ucredit=-1 dcredit=-1 maxrepeat=3 no_username enforce_for_root difok=7` placing difok after enforce_for_root to get root out of this setting
