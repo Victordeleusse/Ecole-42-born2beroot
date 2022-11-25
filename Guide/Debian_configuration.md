@@ -37,7 +37,11 @@ Defaults     log_input
 Defaults     log_output
 Defaults     requiretty
 ```
-If `var/log/sudo` directory does not exist, `mkdir var/log/sudo`.
+If `var/log/sudo` directory does not exist, `mkdir var/log/sudo` and add:  
+```
+Defaults	logfile="/var/log/sudo/sudo.log"
+Defaults	log_input,log_output
+```
 
 ## UFW Setup
 
