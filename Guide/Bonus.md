@@ -151,4 +151,4 @@ $ sudo chown -R www-data:www-data /var/www/html/
 $ sudo chmod -R 755 /var/www/html/
 $ sudo systemctl restart lighttpd
 ```
-In host browser, connect to http://127.0.0.1:8080 and finish WordPress installation.
+In host browser, connect to http://127.0.0.1:4142 and finish WordPress installation.
