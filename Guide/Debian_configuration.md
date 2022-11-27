@@ -182,8 +182,37 @@ The user named your_intra_login must be part of the `sudo` and `user42` groups. 
 `id -g` : shows a user’s main group ID.  
 `getent group` : displays a list of all users in a group.  
 
+## Monitoring.sh
+Write `monitoring.sh` file as root and put it in `/root directory`.
 
+Check the following commands to figure out how to write the script:
+```
+uname : architecture information
+/proc/cpuinfo : CPU information
+free : RAM information
+df : disk information
+top -bn1 : process information
+who : boot and connected user information
+lsblk : partition and LVM information
+/proc/net/sockstat : TCP information
+hostname : hostname and IP information
+ip link show / ip address : IP and MAC information
+```
 
+Remember to give the script execution permissions, i.e.:  
+`chmod 755 monitoring.sh`  
+
+The wall command allows us to broadcast a message to all users in all terminals. This can be incorporated into the monitoring.sh script or added later in cron.
+
+To schedule the broadcast every 10 minutes, we need to enable cron:
+
+# systemctl enable cron
+Then start a crontab file for root:
+
+# crontab -e
+And add the job like this:
+
+*/10 * * * * bash /root/monitoring.sh
 
 
 
