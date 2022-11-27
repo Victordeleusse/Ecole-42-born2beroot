@@ -68,6 +68,8 @@ $ sudo ufw delete <port index number>
 ```
 Be careful with the numbered, index are reinitialized after a deletion (check between deletes to get the correct port index number!)
 
+In order to check where the connexion are establish : `$ sudo ss -tunlp` -> Allow ports to enable connexions ;)
+
 ## SSH Setup
 
 Install OpenSSH:  
