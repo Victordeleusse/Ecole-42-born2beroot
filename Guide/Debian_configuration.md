@@ -204,15 +204,12 @@ Remember to give the script execution permissions, i.e.:
 
 The wall command allows us to broadcast a message to all users in all terminals. This can be incorporated into the monitoring.sh script or added later in cron.
 
-To schedule the broadcast every 10 minutes, we need to enable cron:
-
-# systemctl enable cron
-Then start a crontab file for root:
-
-# crontab -e
-And add the job like this:
-
-*/10 * * * * bash /root/monitoring.sh
+To schedule the broadcast every 10 minutes, we need to enable cron:  
+`systemctl enable cron`
+Then start a crontab file for root:  
+`crontab -e`
+And add the job like this:  
+`*/10 * * * * bash /root/monitoring.sh`
 
 
 
