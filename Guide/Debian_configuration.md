@@ -172,8 +172,8 @@ There must be a user with your_intra_login as username. During evaluation, you w
 `users` : shows a list of all currently logged in users.  
 `cat /etc/passwd | cut -d ":" -f 1` : displays a list of all users on the machine.  
 `cat /etc/passwd | awk -F '{print $1}'` : same as above.  
-The user named your_intra_login must be part of the `sudo` and `user42` groups. You must also be able to manipulate user groups during evaluation with the following commands:
 
+The user named your_intra_login must be part of the `sudo` and `user42` groups. You must also be able to manipulate user groups during evaluation with the following commands:
 `groupadd` : creates a new group.  
 `gpasswd -a` : adds a user to a group.  
 `gpasswd -d` : removes a user from a group.  
