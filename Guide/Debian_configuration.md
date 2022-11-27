@@ -213,5 +213,5 @@ And add the job like this:
 
 ## Signature.txt
 
-Please checkthe subject
+Please check the subject.
 
