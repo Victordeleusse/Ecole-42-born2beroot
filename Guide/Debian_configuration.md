@@ -25,8 +25,8 @@ It should answer `root`.
 If not, modify sudoers file as explained below and add this line:  
 > `username  ALL=(ALL:ALL) ALL`
 
-Edit `sudoers.tmp` file as root with the command:
-`$ cd /etc` -> `$ sudo visudo`
+Edit `sudoers.tmp` file in `/etc` as root with the command:
+`$ sudo visudo`
 
 Add these default settings as per subject instructions:
 ```
